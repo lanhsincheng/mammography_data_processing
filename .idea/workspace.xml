@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32b6e1a7-fd33-4e71-90d6-2babcaec275b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lunaseg/preprocess_luna16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lunaseg/simpleITK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opencvdlhw2/.idea/opencvdlhw2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.github/workflows/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/man/labelme.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/.readme/annotation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000006.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_annotated/2011_000025.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/Annotations/2011_000003.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/Annotations/2011_000006.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/Annotations/2011_000025.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/AnnotationsVisualization/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/AnnotationsVisualization/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/AnnotationsVisualization/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/JPEGImages/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/JPEGImages/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/JPEGImages/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/data_dataset_voc/class_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/labelme2voc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/bbox_detection/labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/.readme/annotation_cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/.readme/annotation_dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/data_annotated/0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/data_annotated/0001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/data_annotated/0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/data_annotated/0002.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/classification/flags.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/.readme/annotation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/.readme/draw_label_png_class.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/.readme/draw_label_png_object.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000006.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_annotated/2011_000025.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_coco/JPEGImages/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_coco/JPEGImages/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_coco/JPEGImages/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_coco/annotations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/JPEGImages/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/JPEGImages/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/JPEGImages/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClass/2011_000003.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClass/2011_000006.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClass/2011_000025.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObject/2011_000003.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObject/2011_000006.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObject/2011_000025.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectPNG/2011_000003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectPNG/2011_000006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectPNG/2011_000025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectVisualization/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectVisualization/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/SegmentationObjectVisualization/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/data_dataset_voc/class_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/labelme2coco.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/labelme2voc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/instance_segmentation/labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/primitives/primitives.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/primitives/primitives.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/.readme/annotation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/.readme/draw_label_png.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000006.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_annotated/2011_000025.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/JPEGImages/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/JPEGImages/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/JPEGImages/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClass/2011_000003.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClass/2011_000006.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClass/2011_000025.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassPNG/2011_000025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/SegmentationClassVisualization/2011_000025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/data_dataset_voc/class_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/labelme2voc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/semantic_segmentation/labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/.readme/annotation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/.readme/draw_json.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/.readme/draw_label_png.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3_json/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3_json/info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3_json/label.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3_json/label_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/apc2016_obj3_json/label_viz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/tutorial/load_label_png.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/.readme/00000100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/.readme/00000101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/.readme/data_annotated.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000100.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000101.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000102.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000103.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_annotated/00000104.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/JPEGImages/00000100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/JPEGImages/00000101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/JPEGImages/00000102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/JPEGImages/00000103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/JPEGImages/00000104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClass/00000100.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClass/00000101.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClass/00000102.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClass/00000103.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClass/00000104.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassPNG/00000100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassPNG/00000101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassPNG/00000102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassPNG/00000103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassPNG/00000104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassVisualization/00000100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassVisualization/00000101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassVisualization/00000102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassVisualization/00000103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/SegmentationClassVisualization/00000104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/data_dataset_voc/class_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/labelme2voc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/video_annotation/labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github2pypi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/cli/draw_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/cli/draw_label_png.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/cli/json_to_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/cli/on_docker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/config/default_config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/color-line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/done.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/done.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/expert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/eye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/feBlend-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/fit-width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/fit-window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/fit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/icon.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/labels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/labels.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/objects.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/quit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/save-as.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/save-as.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/undo-cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/zoom-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/zoom-out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/icons/zoom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/label_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/shape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/_io.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/draw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/qt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/utils/shape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/canvas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/color_dialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/escapable_qlist_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/label_dialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/label_qlist_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/tool_bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labelme/widgets/zoom_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_hw2/ML_HW3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_hw2/binominal_distribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_hw2/draw_binomial_distribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_hw2/jen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_hw2/new_ML_HW3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC _usage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/docs_tests/man_tests/test_labelme_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lunaseg/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/data/apc2016_obj3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/data/apc2016_obj3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/test_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/utils_tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/utils_tests/test_draw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/utils_tests/test_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/utils_tests/test_shape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/utils_tests/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/widgets_tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/labelme_tests/widgets_tests/test_label_dialog.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WSpJkTT8cNlQk7GgquqxzzpOpr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\mammography_data_processing\yolov4_preprocess" />
+      <recent name="D:\PycharmProjects\mammography_data_processing\feature_exploration" />
+      <recent name="D:\PycharmProjects\mammography_data_processing\utils" />
+      <recent name="D:\PycharmProjects\mammography_data_processing\filter" />
+      <recent name="D:\PycharmProjects\mammography_data_processing\data_analysis" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ML_HW3">
+    <configuration name="1_DDSM_makeyolotxt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yolov4_preprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolov4_preprocess/1_DDSM_makeyolotxt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ML_HW3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_hw2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_hw2/ML_HW3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pairwise_comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_analysis/pairwise_comparison.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pick_specific_type" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/filter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter/pick_specific_type.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/feature_exploration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_exploration/preprocessing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ML_HW3" />
+        <item itemvalue="Python.pick_specific_type" />
+        <item itemvalue="Python.preprocessing" />
+        <item itemvalue="Python.1_DDSM_makeyolotxt" />
+        <item itemvalue="Python.pairwise_comparison" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32b6e1a7-fd33-4e71-90d6-2babcaec275b" name="Default Changelist" comment="" />
+      <created>1579152780903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579152780903</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/concate_dataset.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/separate_gen_csv.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_analysis/ax_kmeans_clustering.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ML_hw2/jen.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/yolov4_preprocess/0_darknet_classification_model_file_convert.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/yolov4_preprocess/0_darknet_classification_model_file_convert.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/yolov4_preprocess/0_darknet_classification_model_file_convert.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
