@@ -4,6 +4,7 @@
     <list default="true" id="32b6e1a7-fd33-4e71-90d6-2babcaec275b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../lunaseg/preprocess_luna16.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lunaseg/simpleITK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../opencvdlhw2/.idea/opencvdlhw2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.github/workflows/main.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
@@ -229,8 +230,8 @@
       <change beforePath="$PROJECT_DIR$/ML_hw2/draw_binomial_distribution.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ML_hw2/jen.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ML_hw2/new_ML_HW3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC _usage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC _usage.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/cal_ROC_AUC _usage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/cal_ROC_AUC.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../setup.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tests/docs_tests/man_tests/test_labelme_1.py" beforeDir="false" />
