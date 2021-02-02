@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32b6e1a7-fd33-4e71-90d6-2babcaec275b" name="Default Changelist" comment="">
+    <list default="true" id="32b6e1a7-fd33-4e71-90d6-2babcaec275b" name="Default Changelist" comment="DL evaluation">
       <change afterPath="$PROJECT_DIR$/../lunaseg/preprocess_luna16.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lunaseg/simpleITK.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_analysis/MLP_Classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/confidence_level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_exploration/HDR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_exploration/laplacian_gaussian_pyramid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/get_roi_size.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/pick_vallidation.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../opencvdlhw2/.idea/opencvdlhw2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.github/workflows/main.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
@@ -225,13 +231,14 @@
       <change beforePath="$PROJECT_DIR$/../labelme/widgets/label_qlist_widget.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../labelme/widgets/tool_bar.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../labelme/widgets/zoom_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_hw2/ML_HW3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_hw2/binominal_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_hw2/draw_binomial_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_hw2/jen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_hw2/new_ML_HW3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC _usage.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/cal_ROC_AUC _usage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/cal_ROC_AUC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis/pairwise_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis/pairwise_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/cal_ROC_AUC.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/cal_ROC_AUC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_exploration/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_exploration/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/pick.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filter/pick.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/pick_specific_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/filter/pick_specific_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/correct_xml_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/correct_xml_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../setup.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tests/docs_tests/man_tests/test_labelme_1.py" beforeDir="false" />
@@ -261,13 +268,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1WSpJkTT8cNlQk7GgquqxzzpOpr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -290,8 +303,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ML_HW3">
-    <configuration name="1_DDSM_makeyolotxt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.preprocessing">
+    <configuration name="HDR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,11 +312,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yolov4_preprocess" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/feature_exploration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolov4_preprocess/1_DDSM_makeyolotxt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_exploration/HDR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,28 +325,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ML_HW3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="data_processing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_hw2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_hw2/ML_HW3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pairwise_comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="MLP_Classifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,7 +337,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_analysis/pairwise_comparison.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_analysis/MLP_Classifier.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,7 +346,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pick_specific_type" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cal_ROC_AUC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -362,11 +354,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/filter" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter/pick_specific_type.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluation/cal_ROC_AUC.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_roi_size" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/get_roi_size.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,11 +411,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ML_HW3" />
-        <item itemvalue="Python.pick_specific_type" />
         <item itemvalue="Python.preprocessing" />
-        <item itemvalue="Python.1_DDSM_makeyolotxt" />
-        <item itemvalue="Python.pairwise_comparison" />
+        <item itemvalue="Python.MLP_Classifier" />
+        <item itemvalue="Python.cal_ROC_AUC" />
+        <item itemvalue="Python.HDR" />
+        <item itemvalue="Python.get_roi_size" />
       </list>
     </recent_temporary>
   </component>
@@ -417,6 +430,14 @@
       <option name="presentableId" value="Default" />
       <updated>1579152780903</updated>
     </task>
+    <task id="LOCAL-00001" summary="DL evaluation">
+      <created>1606387823232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606387823232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,6 +452,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DL evaluation" />
+    <option name="LAST_COMMIT_MESSAGE" value="DL evaluation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -489,6 +514,41 @@
           <url>file://$PROJECT_DIR$/evaluarion/cal_ROC_AUC.py</url>
           <line>47</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_exploration/wavelet.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/pick_vallidation.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_analysis/MLP_Classifier.py</url>
+          <line>253</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_analysis/MLP_Classifier.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_exploration/preprocessing.py</url>
+          <line>235</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_exploration/HDR.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_exploration/HDR.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="318" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -10,9 +10,9 @@ import cv2
 import os
 from matplotlib import pyplot as plt
 
-rd_path = r'G:\DDSM\CBIS-DDSM\JPEG_test\Mass_trans/'
+rd_path = r'D:\Mammograph\ROI_training_dataset\maskoverlap_trans/'
 # rd_path = r'D:\Mammograph\ROI_training_dataset\JPEGImages/'
-wb_path = r'G:\DDSM\CBIS-DDSM\JPEG_test\Mass_maskoverlap-test/'
+wb_path = r'D:\Mammograph\ROI_training_dataset\temp/'
 # check_path = r'D:\Mammograph\ROI_training_dataset\test2/'
 
 
@@ -43,25 +43,44 @@ def log_transform(img):
 
 def power_law_transform(img):
     # create power-law transform feature.
-    powerlaw_im = np.array(255 * (img / 255) ** 3.5, dtype='uint8')
+    powerlaw_im = np.array(255 * (img / 255) ** 3.5, dtype='uint8')#3.5
+    cv2.imshow("original", img)
+    cv2.imshow("powerlaw_im", powerlaw_im)
+    cv2.waitKey()
+    return powerlaw_im
+
+def power_law_transform_tophat(img):
+    # create power-law transform feature.
+    powerlaw_im = np.array(255 * (img / 255) ** 2.5, dtype='uint8')#3.5
     # cv2.imshow("original", img)
     # cv2.imshow("powerlaw_im", powerlaw_im)
     # cv2.waitKey()
     return powerlaw_im
 
+def adjust_gamma(image, gamma=0.5):
+    # build a lookup table mapping the pixel values [0, 255] to their adjusted gamma values
+    invGamma = 1.0 / gamma
+    table = np.array([((i / 255.0) ** invGamma) * 255 for i in np.arange(0, 256)]).astype("uint8")
+
+    # apply gamma correction using the lookup table
+    return cv2.LUT(image, table)
+
 def threshold(img):
     # ret,th = cv2.threshold(img,38,255,cv2.THRESH_BINARY)
-    ret, th = cv2.threshold(img, 35, 255, cv2.THRESH_BINARY) #IN35 #CBIS38
-    # cv2.imshow("original", img)
-    # cv2.imshow("tophat", th)
-    # cv2.waitKey()
+    # img = power_law_transform_tophat(img)
+    # img = CLAHE(img)
+    ret, th = cv2.threshold(img, 22, 255, cv2.THRESH_BINARY) #IN35 #CBIS38
+    cv2.imshow("original", img)
+    cv2.imshow("threshold", th)
+    cv2.imwrite('threshold.jpg', th)
+    cv2.waitKey()
     return th
 
 def tophat(img):
     # Getting the kernel to be used in Top-Hat
-    filterSize = (11, 11) #11
-    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,
-                                       filterSize)
+    filterSize = (8, 8) #11
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
+                                       filterSize)#ELLIPSE
 
     # Reading the image named 'input.jpg'
     # input_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -71,18 +90,20 @@ def tophat(img):
                                   cv2.MORPH_TOPHAT,
                                   kernel)
 
-    # cv2.imshow("original", img)
-    # cv2.imshow("tophat", tophat_img)
-    # cv2.waitKey()
+    cv2.imshow("original", img)
+    cv2.imshow("tophat", tophat_img)
+    cv2.imwrite('tophat_img.jpg', tophat_img)
+    cv2.waitKey()
     return tophat_img
 
 def erosion(img):
-    kernel = np.ones((3, 3), np.uint8)
+    kernel = np.ones((1, 1), np.uint8)
     erode_im = cv2.erode(img, kernel, iterations=1)
 
-    # cv2.imshow("original", img)
-    # cv2.imshow("erode_im", erode_im)
-    # cv2.waitKey()
+    cv2.imshow("original", img)
+    cv2.imshow("erode_im", erode_im)
+    cv2.imwrite('erode_im.jpg', erode_im)
+    cv2.waitKey()
     return erode_im
 
 def dilation(img):
@@ -123,6 +144,7 @@ def overlap(origin_img, img):
     # cv2.imshow("original", origin_img)
     # cv2.imshow("overlap", dst)
     # cv2.waitKey()
+    cv2.imwrite('dst.jpg', dst)
     return dst
 
 def fusion(check, img2):
@@ -172,12 +194,26 @@ for image in images:
     img = median(img)
     # img = hist_eqa(img)
     # img = power_law_transform(img)
-    img2 = img.copy()
+    img = adjust_gamma(img, gamma=0.4)
+    p = img + origin_img
+    # for i in range(origin_img.shape[0]):
+    #     for j in range(origin_img.shape[1]):
+    #         if p[i][j]>255 :
+    #             p[i][j] = 255
+    cv2.imshow("original", origin_img)
+    cv2.imshow("adjust gamma", img)
+    cv2.imwrite('adjust gamma.jpg', img)
+    cv2.waitKey()
+
+
+    # img2 = img.copy()
     # img = CLAHE(img)
     # img = pixeladd(origin_img, img)
+
     img = tophat(img)
+
     # img2 = canny(img2)
-    # img = erosion(i mg)
+
     # img = threshold(img)
     # img = fft(img)
 
@@ -189,7 +225,7 @@ for image in images:
 
     img = threshold(img)
     # img = dilation(img)
-
+    img = erosion(img)
     # check = img
     check = overlap(origin_img, img)
     # check2 = fusion(check, img2)

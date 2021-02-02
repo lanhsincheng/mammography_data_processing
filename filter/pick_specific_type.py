@@ -7,8 +7,8 @@
 """
 import os
 import cv2
-rd_path = r'G:\DDSM\CBIS-DDSM\JPEG_test\Calc_trans/'
-wb_path = r'G:\DDSM\CBIS-DDSM\JPEG_test\subtlely1/'
+rd_path = r'G:\DDSM\CBIS-DDSM\JPEG_train\Calc_trans/'
+wb_path = r'G:\DDSM\CBIS-DDSM\JPEG_val/'
 # if want to filter
 filter_path = r'G:\project_yolo\project_mammo\training_dataset\test/'
 
@@ -25,8 +25,9 @@ img_list = os.listdir(rd_path)
 i = 0
 k = 0
 #print(pick_list)
-for img in img_list:
-    rd_final_path = rd_path + img
+# for img in img_list:
+for img in pick_list:
+    rd_final_path = rd_path + img + '.jpg'
     pic = cv2.imread(rd_final_path)
     img_name = img.split('.')[0]
     final_wb_path = wb_path + img_name + '.jpg'

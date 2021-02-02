@@ -137,7 +137,10 @@ def gen_gaussian_type(df): # only random
     df2['assessment'] = df['assessment']
     df2['subtlety'] = df['subtlety']
     df2['breast density'] = df['breast density']
-    # df2['calc distribution'] = df['calc distribution']
+    df2['calc distribution'] = df['calc distribution']
+
+    pathology = df2['pathology'].tolist()
+    distribution = df2['calc distribution'].tolist()
 
     # df2['benign'] = df['benign']
     # df2['malignant'] = df['malignant']
@@ -190,6 +193,9 @@ def IN_BREAST_gen_gaussian_type(df): # only random
     df2['case'] = df['case']
     df2['pathology'] = df['pathology']
     df2['age'] = df['age']
+
+    pathology = df2['pathology'].tolist()
+    distribution = df2['calc distribution'].tolist()
 
     # df2['benign'] = df['benign']
     # df2['malignant'] = df['malignant']
